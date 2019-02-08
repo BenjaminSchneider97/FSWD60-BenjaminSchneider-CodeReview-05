@@ -1,0 +1,49 @@
+//arrays with the movies
+var comedy = [
+		{
+		 "title":"ted", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quam ipsa sed, minima exercitationem. Illo modi in adipisci labore est, eaque fugit, corporis nemo eos! Nemo eaque ea laborum magnam.",
+		 "image":"img/ted.jpg"
+		},
+		{
+		 "title":"Hangover", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ut excepturi beatae, magni optio illum! Saepe exercitationem placeat, quae neque illo, temporibus deserunt dolorum voluptatibus distinctio provident, tempora architecto qui.",
+		 "image":"img/hangover.jpg"
+		}
+	];
+var action = [
+		{
+		 "title":"The Avengers", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi modi maiores voluptates officiis esse magni delectus consectetur, tempora pariatur exercitationem eum debitis itaque beatae ipsam animi quidem at dignissimos veniam.",
+		 "image":"img/avengers.jpg"
+		},
+		{
+		 "title":"Spiderman Homecoming", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae omnis, voluptatibus voluptatem sunt cupiditate facilis consequatur reprehenderit odit cum excepturi ea nemo voluptate nobis velit voluptates commodi fugiat suscipit.",
+		 "image":"/img/spiderman.jpg"
+		}
+	];
+var drama = [
+		{
+		 "title":"Fifty Shades Of Grey", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat vitae consequatur ut eius delectus veritatis est nihil consectetur! Sequi impedit assumenda, rem ipsum vitae dolorem laborum quis nam deserunt?",
+		 "image":"/img/grey.jpg"
+		},
+		{
+		 "title":"The Lucky One", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus tempora, suscipit tempore id ducimus eveniet autem magni ratione optio eaque, iste itaque nulla deserunt similique hic neque, cupiditate consequuntur. Itaque.",
+		 "image":"img/luckyone.jpg"
+		}
+	];
+var horror = [
+		{
+		 "title":"The Conjuring", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, a, repudiandae voluptatibus atque ducimus, eos perferendis eligendi cupiditate, sequi deleniti provident vel eum. Obcaecati culpa aperiam ex perferendis corrupti magnam.",
+		 "image":"img/conjuring.jpg"
+		},
+		{
+		 "title":"Drag Me To Hell", 
+		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum laudantium fugit voluptas, molestiae velit, doloremque repellendus illum rerum placeat totam incidunt, cum distinctio modi commodi voluptate nesciunt ratione eaque consequuntur.",
+		 "image":"img/dragmetohell.jpg"
+		}
+	];

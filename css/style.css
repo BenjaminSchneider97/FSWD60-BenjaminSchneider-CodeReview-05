@@ -10,7 +10,6 @@ body{
 	background-color: rgb(23,30,36, .9);
 	margin: 0 auto;
 	padding: 0;
-	height: 1000px;
 }
 .header{
 	text-align: center;
@@ -20,6 +19,57 @@ body{
 	margin: 0;
 }
 .header h1{
+	font-size: 2.7em;
 	margin: 0;
 	padding: 0;
+}
+.navbar{
+	margin: 0;
+	background-color: #434343;
+}
+.navl > a{
+	color: #dcdde1!important;
+}
+.navl > a:hover{
+	color: #fff!important;
+}
+.heading{
+	text-align: center;
+	color: #fff;
+	padding: 25px;
+	margin: 0;
+}
+.heading h1{
+	margin: 0;
+	padding: 0;
+	font-size: 2.2em;
+}
+#allmovies{
+	display: flex;
+	justify-content: space-around;
+}
+.movieimg{
+	padding-top: 25px;
+}
+.movieimg img{
+	width: 100%;
+	height: auto;
+}
+.footer{
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+}
+.footerimg{
+	margin: 20px auto;
+}
+.footerimg img{
+	width: 300px;
+	height: auto;
+}
+.footertext{
+	margin: 0 auto;
+	color: white;
+	font-size: 1.3em;
 }
