@@ -1,49 +1,51 @@
 //arrays with the movies
-var comedy = [
+var movies = [
 		{
 		 "title":"ted (2012)", 
 		 "desc":"The film tells the story of John Bennett, a Boston native whose childhood wish brings his teddy bear friend Ted to life. However, in adulthood, Ted prevents John and his love interest Lori Collins from moving on with their lives.",
-		 "image":"img/ted.jpg"
+		 "image":"img/ted.jpg",
+		 "genre":"comedy"
 		},
 		{
 		 "title":"Hangover (2009)", 
 		 "desc":"It tells the story of 4 guys who travel to Las Vegas for a bachelor party to celebrate a marriage. However they wake up with the groom missing and no memory of the previous night, and now must find the groom for his wedding.",
-		 "image":"img/hangover.jpg"
-		}
-	];
-var action = [
+		 "image":"img/hangover.jpg",
+		 "genre":"comedy"
+		},
 		{
 		 "title":"The Avengers (2012)", 
 		 "desc":"In the film, Nick Fury, director of the spy agency S.H.I.E.L.D., recruits Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team that must stop Thor's brother Loki from subjugating Earth.",
-		 "image":"img/avengers.jpg"
+		 "image":"img/avengers.jpg",
+		 "genre":"action"
 		},
 		{
 		 "title":"Spiderman Homecoming (2017)", 
 		 "desc":" Peter Parker / Spiderman tries to balance high school life and being an Avenger for Tony stark, while facing the Vulture.",
-		 "image":"img/spiderman.jpg"
-		}
-	];
-var drama = [
+		 "image":"img/spiderman.jpg",
+		 "genre":"action"
+		},
 		{
 		 "title":"Fifty Shades Of Grey (2015)", 
 		 "desc":" Dakota Johnson as Anastasia Steele, a college graduate who begins a sadomasochistic relationship with young business magnate Christian Grey, played by Jamie Dornan.",
-		 "image":"img/grey.jpg"
+		 "image":"img/grey.jpg",
+		 "genre":"drama"
 		},
 		{
 		 "title":"The Lucky One (2012)", 
 		 "desc":"Zac Efron as Logan Thibault, a US Marine who finds a photograph of a young woman while serving in Iraq, carries it around as a good luck charm, and later tracks down the woman, with whom he begins a relationship.",
-		 "image":"img/luckyone.jpg"
-		}
-	];
-var horror = [
+		 "image":"img/luckyone.jpg",
+		 "genre":"drama"
+		},
 		{
 		 "title":"The Conjuring (2013)", 
 		 "desc":"The Warrens come to the assistance of the Perron family, who experienced increasingly disturbing events in their farmhouse in Rhode Island in 1971.",
-		 "image":"img/conjuring.jpg"
+		 "image":"img/conjuring.jpg",
+		 "genre":"horror"
 		},
 		{
 		 "title":"Drag Me To Hell (2009)", 
 		 "desc":"A loan officer chooses not to extend an elderly woman's mortgage. In retaliation, the woman places a curse on the loan officer that, after three days of escalating torment, will plunge her into the depths of Hell to burn for eternity.",
-		 "image":"img/dragmetohell.jpg"
+		 "image":"img/dragmetohell.jpg",
+		 "genre":"horror"
 		}
 	];

@@ -1,53 +1,14 @@
 $(document).ready(function() {
-    for (i = 0; i < comedy.length; i++) {
+    for (i = 0; i < movies.length; i++) {
         $("#allmovies").append(`
-			<div class='col-lg-5 movie comedy'>
+			<div class='col-lg-5 movie ${movies[i].genre}'>
 				<div class=" col-lg-5 movieimg">
-					<img src="${comedy[i].image}">
+					<img src="${movies[i].image}">
 				</div>
 				<div class="col-lg-7 description">
-					<h3>${comedy[i].title}</h3>
+					<h3>${movies[i].title}</h3>
 					<hr>
-					<p>${comedy[i].desc}</p>
-				</div>
-			</div>`);
-    }
-    for (i = 0; i < action.length; i++) {
-        $("#allmovies").append(`
-			<div class='col-lg-5 movie action'>
-				<div class=" col-lg-5 movieimg">
-					<img src="${action[i].image}">
-				</div>
-				<div class="col-lg-7 description">
-					<h3>${action[i].title}</h3>
-					<hr>
-					<p>${action[i].desc}</p>
-				</div>
-			</div>`);
-    }
-    for (i = 0; i < drama.length; i++) {
-        $("#allmovies").append(`
-			<div class='col-lg-5 movie drama'>
-				<div class=" col-lg-5 movieimg">
-					<img src="${drama[i].image}">
-				</div>
-				<div class="col-lg-7 description">
-					<h3>${drama[i].title}</h3>
-					<hr>
-					<p>${drama[i].desc}</p>
-				</div>
-			</div>`);
-    }
-    for (i = 0; i < horror.length; i++) {
-        $("#allmovies").append(`
-			<div class='col-lg-5 movie horror'>
-				<div class=" col-lg-5 movieimg">
-					<img src="${horror[i].image}">
-				</div>
-				<div class="col-lg-7 description">
-					<h3>${horror[i].title}</h3>
-					<hr>
-					<p>${horror[i].desc}</p>
+					<p>${movies[i].desc}</p>
 				</div>
 			</div>`);
     }
