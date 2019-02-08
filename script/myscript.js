@@ -11,73 +11,74 @@ $(document).ready(function() {
 					<p>${movies[i].desc}</p>
 				</div>
 					<button class="likes" id="like` + i + `">${Math.floor((Math.random() * 100) + 1)}</button>
-					<button class="btn">Like <i class="fas fa-thumbs-up"></i></button>
-			</div>`);
+					<button class="btn" data-ref="like` + i + `">Like <i class="fas fa-thumbs-up"></i></button>
+					</div>`);
     }
 
-    $(".btn").on("click", function(i){
-    	var likes = $("#like" + i).html();
-    	likes++;
-    	$("#like" + i).html(likes);
+    $(".btn").on("click", function() {
+        var ref = $(this).attr('data-ref');
+        var likes = $("#" + ref).html();
+        likes++;
+        $("#" + ref).html(likes);
     });
 
-    $("#genreallmovies").on("click", function(){
-    	var a = $(".action");
-    	var b = $(".comedy");
-    	var c = $(".drama");
-    	var d = $(".horror");
-    	a.fadeIn(500);
-    	b.fadeIn(500);
-    	c.fadeIn(500);
-    	d.fadeIn(500);
-
-    });
-
-    $("#genreaction").on("click", function(){
-    	var a = $(".action");
-    	var b = $(".comedy");
-    	var c = $(".drama");
-    	var d = $(".horror");
-    	a.fadeIn(500);
-    	b.fadeOut(500);
-    	c.fadeOut(500);
-    	d.fadeOut(500);
+    $("#genreallmovies").on("click", function() {
+        var a = $(".action");
+        var b = $(".comedy");
+        var c = $(".drama");
+        var d = $(".horror");
+        a.fadeIn(500);
+        b.fadeIn(500);
+        c.fadeIn(500);
+        d.fadeIn(500);
 
     });
 
-    $("#genrecomedy").on("click", function(){
-    	var a = $(".action");
-    	var b = $(".comedy");
-    	var c = $(".drama");
-    	var d = $(".horror");
-    	a.fadeOut(500);
-    	b.fadeIn(500);
-    	c.fadeOut(500);
-    	d.fadeOut(500);
+    $("#genreaction").on("click", function() {
+        var a = $(".action");
+        var b = $(".comedy");
+        var c = $(".drama");
+        var d = $(".horror");
+        a.fadeIn(500);
+        b.fadeOut(500);
+        c.fadeOut(500);
+        d.fadeOut(500);
 
     });
 
-    $("#genredrama").on("click", function(){
-    	var a = $(".action");
-    	var b = $(".comedy");
-    	var c = $(".drama");
-    	var d = $(".horror");
-    	a.fadeOut(500);
-    	b.fadeOut(500);
-    	c.fadeIn(500);
-    	d.fadeOut(500);
+    $("#genrecomedy").on("click", function() {
+        var a = $(".action");
+        var b = $(".comedy");
+        var c = $(".drama");
+        var d = $(".horror");
+        a.fadeOut(500);
+        b.fadeIn(500);
+        c.fadeOut(500);
+        d.fadeOut(500);
 
     });
 
-    $("#genrehorror").on("click", function(){
-    	var a = $(".action");
-    	var b = $(".comedy");
-    	var c = $(".drama");
-    	var d = $(".horror");
-    	a.fadeOut(500);
-    	b.fadeOut(500);
-    	c.fadeOut(500);
-    	d.fadeIn(500);
+    $("#genredrama").on("click", function() {
+        var a = $(".action");
+        var b = $(".comedy");
+        var c = $(".drama");
+        var d = $(".horror");
+        a.fadeOut(500);
+        b.fadeOut(500);
+        c.fadeIn(500);
+        d.fadeOut(500);
+
+    });
+
+    $("#genrehorror").on("click", function() {
+        var a = $(".action");
+        var b = $(".comedy");
+        var c = $(".drama");
+        var d = $(".horror");
+        a.fadeOut(500);
+        b.fadeOut(500);
+        c.fadeOut(500);
+        d.fadeIn(500);
 
     });
 });
