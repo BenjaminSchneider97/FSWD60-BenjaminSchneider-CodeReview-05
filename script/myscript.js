@@ -9,9 +9,15 @@ $(document).ready(function() {
 					<h3>${movies[i].title}</h3>
 					<hr>
 					<p>${movies[i].desc}</p>
-					<button class="likes">${Math.floor((Math.random() * 100) + 1)}</button>
-					<button class="btn">Like <i class="fas fa-thumbs-up"></i></button>
 				</div>
+					<button class="likes" id="like` + i + `">${Math.floor((Math.random() * 100) + 1)}</button>
+					<button class="btn">Like <i class="fas fa-thumbs-up"></i></button>
 			</div>`);
     }
+
+    $(".btn").on("click", function(i){
+    	var likes = $("#like" + i).html();
+    	likes ++;
+    	$("#like" + i).html(likes);
+    });
 });

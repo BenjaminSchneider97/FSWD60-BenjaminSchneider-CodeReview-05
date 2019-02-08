@@ -71,9 +71,14 @@ body{
 	padding: 0;
 }
 .likes{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
 	float: right;
 	background-color: #009432;
 	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
 	margin-bottom: 5px;
 	border: none;
 	border-radius: 50%;
@@ -83,6 +88,9 @@ body{
 	height: 50px;
 }
 .btn{
+	position: absolute;
+	right: 55px;
+	bottom: 17px;
 	float: right;
 	width: 100px;
 	color: #009432;
