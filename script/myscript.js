@@ -27,7 +27,7 @@ $(document).ready(function() {
     }
     for (i = 0; i < drama.length; i++) {
         $("#allmovies").append(`
-			<div class='col-lg-5 movie action'>
+			<div class='col-lg-5 movie drama'>
 				<div class=" col-lg-5 movieimg">
 					<img src="${drama[i].image}">
 				</div>
@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
     for (i = 0; i < horror.length; i++) {
         $("#allmovies").append(`
-			<div class='col-lg-5 movie action'>
+			<div class='col-lg-5 movie horror'>
 				<div class=" col-lg-5 movieimg">
 					<img src="${horror[i].image}">
 				</div>
