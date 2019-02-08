@@ -20,14 +20,14 @@ var action = [
 		{
 		 "title":"Spiderman Homecoming", 
 		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae omnis, voluptatibus voluptatem sunt cupiditate facilis consequatur reprehenderit odit cum excepturi ea nemo voluptate nobis velit voluptates commodi fugiat suscipit.",
-		 "image":"/img/spiderman.jpg"
+		 "image":"img/spiderman.jpg"
 		}
 	];
 var drama = [
 		{
 		 "title":"Fifty Shades Of Grey", 
 		 "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat vitae consequatur ut eius delectus veritatis est nihil consectetur! Sequi impedit assumenda, rem ipsum vitae dolorem laborum quis nam deserunt?",
-		 "image":"/img/grey.jpg"
+		 "image":"img/grey.jpg"
 		},
 		{
 		 "title":"The Lucky One", 
