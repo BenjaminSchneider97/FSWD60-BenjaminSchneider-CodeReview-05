@@ -59,6 +59,7 @@ body{
 	padding: 25px 0 25px 0;
 }
 .movieimg img{
+	border-radius: 15px;
 	width: 100%;
 	height: auto;
 }
