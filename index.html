@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fifth CodeReview</title>
+    <!-- links for all important sites -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,10 +14,13 @@
 </head>
 
 <body>
+	<!-- container for the full contet -->
     <div class="container">
+    	<!-- header with title -->
     	<header class="header">
     		<h1 class="lead">Movie Factory</h1>
     	</header>
+    	<!-- navbar with dropdown menue from bootstrap -->
     	<nav class="navbar navbar-inverse">
     	    <ul class="nav navbar-nav">
     	      <li class="navl"><a href="#">Home</a></li>
@@ -32,13 +36,16 @@
     	      <li id="sortlikes" class="navl"><a href="#">Sort by likes</a></li>
     	    </ul>
     	</nav>
+    	<!-- small heading below navbar -->
     	<div class="heading">
     		<h1>Movies</h1>
     	</div>
+    	<!-- this is where the data from the json gets created -->
         <div class="col-lg-12">
             <div id="allmovies" class="row">
             </div>
         </div>
+        <!-- footer on the bottom of the page -->
         <footer class="footer">
 			<div class ="footerimg">
 				<img src="img/logo.png">
@@ -48,6 +55,7 @@
 			</div>	
 		</footer>
     </div>
+    <!-- links for json and script -->
     <script src="json/movies.json"></script>
     <script src="script/myscript.js"></script>
 </body>

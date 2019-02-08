@@ -1,3 +1,4 @@
+/* main styling for body and background */
 body{
 	margin: 0;
 	padding: 0;
@@ -11,6 +12,7 @@ body{
 	margin: 0 auto;
 	padding: 0;
 }
+/* styling for header */
 .header{
 	text-align: center;
 	color: #fff;
@@ -23,6 +25,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+/* styling for the navbar in addition to the original bootstrap styling */
 .navbar{
 	margin: 0;
 	background-color: #434343;
@@ -33,6 +36,7 @@ body{
 .navl > a:hover{
 	color: #fff!important;
 }
+/* styling for the heading below the navbar */
 .heading{
 	text-align: center;
 	color: #fff;
@@ -44,17 +48,20 @@ body{
 	padding: 0;
 	font-size: 2.2em;
 }
+/* styling for the main content where the movies are */
 #allmovies{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+/* styling for each individual movie div */
 .movie{
 	background-color: #000;
 	border-radius: 25px;
 	color: #fff;
 	margin: 25px;
 }
+/* styling for the movie cover*/
 .movieimg{
 	padding: 25px 0 25px 0;
 }
@@ -62,7 +69,12 @@ body{
 	border-radius: 15px;
 	width: 100%;
 	height: auto;
+	transition: .3s ease-in-out;
 }
+.movieimg img:hover{
+	transform: scale(1.1, 1.1);
+}
+/* styling for the description */
 .description{
 	padding: 25px 15px 0px 15px;
 }
@@ -70,6 +82,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
+/* styling for the area that shows the likes */
 .likes{
 	position: absolute;
 	right: 10px;
@@ -87,6 +100,7 @@ body{
 	width: 50px;
 	height: 50px;
 }
+/* styling for the like button */
 .btn{
 	position: absolute;
 	right: 55px;
@@ -105,6 +119,7 @@ body{
 .btn:hover{
 	color: #fff;
 }
+/* styling for the footer */
 .footer{
 	width: 100%;
 	background-color: #000;
