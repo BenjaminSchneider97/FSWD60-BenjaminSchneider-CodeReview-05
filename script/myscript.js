@@ -17,7 +17,67 @@ $(document).ready(function() {
 
     $(".btn").on("click", function(i){
     	var likes = $("#like" + i).html();
-    	likes ++;
+    	likes++;
     	$("#like" + i).html(likes);
+    });
+
+    $("#genreallmovies").on("click", function(){
+    	var a = $(".action");
+    	var b = $(".comedy");
+    	var c = $(".drama");
+    	var d = $(".horror");
+    	a.fadeIn(500);
+    	b.fadeIn(500);
+    	c.fadeIn(500);
+    	d.fadeIn(500);
+
+    });
+
+    $("#genreaction").on("click", function(){
+    	var a = $(".action");
+    	var b = $(".comedy");
+    	var c = $(".drama");
+    	var d = $(".horror");
+    	a.fadeIn(500);
+    	b.fadeOut(500);
+    	c.fadeOut(500);
+    	d.fadeOut(500);
+
+    });
+
+    $("#genrecomedy").on("click", function(){
+    	var a = $(".action");
+    	var b = $(".comedy");
+    	var c = $(".drama");
+    	var d = $(".horror");
+    	a.fadeOut(500);
+    	b.fadeIn(500);
+    	c.fadeOut(500);
+    	d.fadeOut(500);
+
+    });
+
+    $("#genredrama").on("click", function(){
+    	var a = $(".action");
+    	var b = $(".comedy");
+    	var c = $(".drama");
+    	var d = $(".horror");
+    	a.fadeOut(500);
+    	b.fadeOut(500);
+    	c.fadeIn(500);
+    	d.fadeOut(500);
+
+    });
+
+    $("#genrehorror").on("click", function(){
+    	var a = $(".action");
+    	var b = $(".comedy");
+    	var c = $(".drama");
+    	var d = $(".horror");
+    	a.fadeOut(500);
+    	b.fadeOut(500);
+    	c.fadeOut(500);
+    	d.fadeIn(500);
+
     });
 });

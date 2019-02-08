@@ -4,7 +4,7 @@ var movies = [
 		 "title":"ted (2012)", 
 		 "desc":"The film tells the story of John Bennett, a Boston native whose childhood wish brings his teddy bear friend Ted to life. However, in adulthood, Ted prevents John and his love interest Lori Collins from moving on with their lives.",
 		 "image":"img/ted.jpg",
-		 "genre":"comedy"
+		 "genre":"comedy",
 		},
 		{
 		 "title":"Hangover (2009)", 
