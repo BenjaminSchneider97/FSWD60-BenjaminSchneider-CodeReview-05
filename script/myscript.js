@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
     //function to add one like onclick
     $(".btn").on("click", function() {
-    	//stores the string of the id for the button to find it like #like0, #like1 etc
+    	//data-ref stores the string of the id for the button to find it like #like0, #like1 etc
         var ref = $(this).attr('data-ref');
         //creates the full id with # + the saved string from the ref
         var likes = $("#" + ref).html();
@@ -27,59 +27,44 @@ $(document).ready(function() {
         //gets full id with the likes and adds one like
         $("#" + ref).html(likes);
     });
+    //global variables to get the genre classes from the movies
+    action = $(".action");
+    comedy = $(".comedy");
+    drama = $(".drama");
+    horror = $(".horror");
     //function to remove the filter and show all movies
     $("#genreallmovies").on("click", function() {
-        var a = $(".action");
-        var b = $(".comedy");
-        var c = $(".drama");
-        var d = $(".horror");
-        a.fadeIn(500);
-        b.fadeIn(500);
-        c.fadeIn(500);
-        d.fadeIn(500);
+        action.fadeIn(500);
+        comedy.fadeIn(500);
+        drama.fadeIn(500);
+        horror.fadeIn(500);
     });
     //filter for the action movies
     $("#genreaction").on("click", function() {
-        var a = $(".action");
-        var b = $(".comedy");
-        var c = $(".drama");
-        var d = $(".horror");
-        a.fadeIn(500);
-        b.fadeOut(500);
-        c.fadeOut(500);
-        d.fadeOut(500);
+        action.fadeIn(500);
+        comedy.fadeOut(500);
+        drama.fadeOut(500);
+        horror.fadeOut(500);
     });
     //filter for the comedy movies
     $("#genrecomedy").on("click", function() {
-        var a = $(".action");
-        var b = $(".comedy");
-        var c = $(".drama");
-        var d = $(".horror");
-        a.fadeOut(500);
-        b.fadeIn(500);
-        c.fadeOut(500);
-        d.fadeOut(500);
+        action.fadeOut(500);
+        comedy.fadeIn(500);
+        drama.fadeOut(500);
+        horror.fadeOut(500);
     });
     //filter for drama movies
     $("#genredrama").on("click", function() {
-        var a = $(".action");
-        var b = $(".comedy");
-        var c = $(".drama");
-        var d = $(".horror");
-        a.fadeOut(500);
-        b.fadeOut(500);
-        c.fadeIn(500);
-        d.fadeOut(500);
+        action.fadeOut(500);
+        comedy.fadeOut(500);
+        drama.fadeIn(500);
+        horror.fadeOut(500);
     });
     //filter for the horror movies
     $("#genrehorror").on("click", function() {
-        var a = $(".action");
-        var b = $(".comedy");
-        var c = $(".drama");
-        var d = $(".horror");
-        a.fadeOut(500);
-        b.fadeOut(500);
-        c.fadeOut(500);
-        d.fadeIn(500);
+        action.fadeOut(500);
+        comedy.fadeOut(500);
+        drama.fadeOut(500);
+        horror.fadeIn(500);
     });
 });
