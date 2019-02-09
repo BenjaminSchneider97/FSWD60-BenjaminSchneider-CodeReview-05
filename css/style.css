@@ -5,7 +5,8 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	background-color: #000;
 	background-image: url("../img/background.png");
-	background-repeat: repeat;
+	background-repeat: repeat-y;
+	background-position: top center;
 }
 .container{
 	background-color: rgb(23,30,36, .9);
