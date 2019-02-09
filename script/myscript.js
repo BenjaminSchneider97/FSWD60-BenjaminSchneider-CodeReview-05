@@ -19,7 +19,7 @@ $(document).ready(function() {
     //function to add one like onclick
     $(".btn").on("click", function() {
     	//data-ref stores the string of the id for the button to find it like #like0, #like1 etc
-        var ref = $(this).attr('data-ref');
+        var ref = $(this).attr("data-ref");
         //creates the full id with # + the saved string from the ref
         var likes = $("#" + ref).html();
         //increases the like number by one
@@ -66,5 +66,14 @@ $(document).ready(function() {
         comedy.fadeOut(500);
         drama.fadeOut(500);
         horror.fadeIn(500);
+    });
+    //function to sort the movies based on likes
+    $("#sortlikes").on("click", function(){
+    	var array = [];
+    	for (i = 0; i < movies.length; i++){
+    		array.push($("#like" + i).html());
+    	}
+    	array.sort(function(a, b){return b-a});
+    	console.log(array);
     });
 });
