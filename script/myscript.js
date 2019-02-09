@@ -1,3 +1,4 @@
+//loads on document ready
 $(document).ready(function() {
     function init() {
         //function to add one like onclick
@@ -32,7 +33,7 @@ $(document).ready(function() {
                 </div>
                     <button class="likes" id="like` + i + `">${Math.floor((Math.random() * 100) + 1)}</button>
                     <button class="btn" data-ref="like` + i + `">Like <i class="fas fa-thumbs-up"></i></button>
-                </div>`);
+                    </div>`);
     }
 
     // call init function
@@ -73,45 +74,29 @@ $(document).ready(function() {
         drama.fadeOut(500);
         horror.fadeIn(500);
     });
-    
     //function to sort the movies based on likes
     $("#sortlikes").on("click", function(){
         var array = [];
 
-        // add each movie to array with movieID and movieLikes
-        for (i = 0; i < movies.length; i++){
-            var innerArray = [];
-            innerArray.push(i);
-            innerArray.push($("#like" + i).html());
+        $(".movie:visible").each(function() {
+            var movieHTML = $(this)[0].outerHTML;
+            var movieLikes = $(movieHTML).find(".likes").html();
 
-            array.push(innerArray);
-        }
+            array.push([movieHTML, movieLikes]);
+        });
 
         // sort array by movieLikes
         array.sort(function(a, b){return b[1]-a[1]});
 
-        // remove all movies
-        $("#allmovies").empty();
+        // remove visible movies
+        $(".movie:visible").remove();
 
         // go through sorted array
         for (i = 0; i < array.length; i++){
-            var movieID = array[i][0];
-            var movieLikes = array[i][1];
+            var movieHTML = array[i][0];
 
             // add movies again in sorted order
-            $("#allmovies").append(`
-                <div class='col-lg-5 movie row ${movies[movieID].genre}'>
-                    <div class=" col-lg-5 movieimg">
-                        <img src="${movies[movieID].image}">
-                    </div>
-                    <div class="col-lg-7 description">
-                        <h3>${movies[movieID].title}</h3>
-                        <hr>
-                        <p>${movies[movieID].desc}</p>
-                    </div>
-                        <button class="likes" id="like` + movieID + `">` + movieLikes + `</button>
-                        <button class="btn" data-ref="like` + movieID + `">Like <i class="fas fa-thumbs-up"></i></button>
-                    </div>`);
+            $("#allmovies").append(movieHTML);
         }
 
         // call init function again
